@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confidentialité DIASOFT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --ground: #FBF6EA;
+    --panel: #FFFFFF;
+    --ink: #1A2333;
+    --muted: #5B6472;
+    --night: #0F2742;
+    --gold: #A8841A;
+    --line: #E6DCC3;
+    --tint: #F3EBD4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #081627;
+      --panel: #10233B;
+      --ink: #F0E9D6;
+      --muted: #A9B3C1;
+      --night: #E3C565;
+      --gold: #E3C565;
+      --line: #22405F;
+      --tint: #16304D;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #081627;
+    --panel: #10233B;
+    --ink: #F0E9D6;
+    --muted: #A9B3C1;
+    --night: #E3C565;
+    --gold: #E3C565;
+    --line: #22405F;
+    --tint: #16304D;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 "El Messiri", "Segoe UI", "Noto Sans Arabic", Tahoma, sans-serif;
+    padding-inline: 16px;
+    padding-block: 32px 64px;
+  }
+  main { max-width: 720px; margin: 0 auto; display: grid; gap: 28px; }
+  header { display: grid; gap: 10px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { flex: none; }
+  .brand p { margin: 0; letter-spacing: .3em; font-weight: 600; color: var(--gold); font-size: .8rem; }
+  h1 { margin: 0; font-size: clamp(1.6rem, 5vw, 2.2rem); line-height: 1.15; text-wrap: balance; }
+  .meta { margin: 0; color: var(--muted); font-size: .92rem; }
+  nav { display: flex; gap: 10px; flex-wrap: wrap; }
+  nav a {
+    color: var(--ink); text-decoration: none; font-weight: 600;
+    border: 1px solid var(--line); border-radius: 999px; padding: 4px 14px;
+    background: var(--panel);
+  }
+  nav a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  section {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 8px 24px 20px;
+  }
+  h2 { font-size: 1.35rem; margin: 16px 0 8px; color: var(--night); }
+  h3 { font-size: 1.02rem; margin: 20px 0 2px; }
+  p, li { margin: 6px 0; max-width: 65ch; }
+  ul { padding-inline-start: 1.3em; margin: 4px 0; }
+  a { color: var(--night); }
+  .summary {
+    background: var(--tint); border-radius: 12px; padding: 12px 16px; margin: 12px 0 4px;
+  }
+  .contact { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .addr { font-weight: 700; user-select: all; }
+  button {
+    font: inherit; font-size: .85rem; cursor: pointer; color: var(--ink);
+    background: var(--tint); border: 1px solid var(--line); border-radius: 8px; padding: 2px 10px;
+  }
+  code { font-size: .9em; overflow-wrap: anywhere; }
+  [dir="rtl"] { font-size: 1.06rem; }
+</style>
+</head>
+<body>
+
+
+<main>
+  <header>
+    <div class="brand">
+      <svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
+        <polygon fill="#C9A227" points="22,0 26.2,11.9 37.6,6.4 32.1,17.8 44,22 32.1,26.2 37.6,37.6 26.2,32.1 22,44 17.8,32.1 6.4,37.6 11.9,26.2 0,22 11.9,17.8 6.4,6.4 17.8,11.9"/>
+        <circle cx="22" cy="22" r="13" fill="#0F2742"/>
+        <g fill="#FFFFFF">
+          <rect x="14.5" y="14.5" width="4" height="4" rx="1"/><rect x="20" y="14.5" width="4" height="4" rx="1"/><rect x="25.5" y="14.5" width="4" height="4" rx="1"/>
+          <rect x="20" y="20" width="4" height="4" rx="1"/>
+          <rect x="14.5" y="25.5" width="4" height="4" rx="1"/><rect x="20" y="25.5" width="4" height="4" rx="1"/>
+        </g>
+        <g fill="#FFFFFF" opacity=".3"><rect x="14.5" y="20" width="4" height="4" rx="1"/><rect x="25.5" y="20" width="4" height="4" rx="1"/><rect x="25.5" y="25.5" width="4" height="4" rx="1"/></g>
+      </svg>
+      <p>DIASOFT</p>
+    </div>
+    <h1>Kalimots · Kalimix · Kaliklik</h1>
+    <p class="meta">Politique de confidentialité · سياسة الخصوصية · Privacy policy — dernière mise à jour : 9 octobre 2026</p>
+    <nav aria-label="Langue"><a href="#fr">Français</a><a href="#ar">العربية</a><a href="#en">English</a></nav>
+  </header>
+
+  <section id="fr" lang="fr">
+    <h2>Politique de confidentialité</h2>
+    <p>Cette politique s'applique aux jeux édités par <strong>DIASOFT</strong> :</p>
+    <ul>
+      <li><strong>Kalimots</strong> — mots croisés et mots fléchés, identifiant <code>com.diasoft.kalimots</code> ;</li>
+      <li><strong>Kalimix</strong> — mots mêlés en français, arabe et anglais, identifiant <code>com.diasoft.kalimix</code> ;</li>
+      <li><strong>Kaliklik</strong> — premiers mots pour les enfants en français, arabe et anglais, identifiant <code>com.diasoft.kaliklik</code>.</li>
+    </ul>
+    <p class="summary"><strong>En résumé :</strong> DIASOFT ne collecte aucune donnée personnelle et ne vous
+      demande aucun compte. Les jeux sont gratuits grâce à la publicité, fournie par <strong>Google AdMob</strong> :
+      pour afficher les annonces, Google traite certaines données techniques de votre appareil, décrites ci-dessous.
+      <strong>Kaliklik, le jeu pour enfants, fait exception : il ne contient aucune publicité</strong> (voir le point 6).</p>
+
+    <h3>1. Données collectées par DIASOFT</h3>
+    <p>Aucune. Les jeux ne demandent ni nom, ni adresse e-mail, ni numéro de téléphone, ni accès à votre
+      localisation, vos contacts, photos, micro ou caméra. DIASOFT ne reçoit aucune information vous concernant.</p>
+
+    <h3>2. Données enregistrées sur votre appareil</h3>
+    <p>Pour que vous puissiez reprendre votre partie, chaque jeu enregistre <strong>uniquement sur votre
+      téléphone</strong> : la langue et le mode de jeu choisis, vos réglages (thème, sons, vibrations,
+      animations, rappel quotidien), les niveaux terminés, les grilles en cours, votre nombre de pièces et
+      votre série de jours.
+      Ces informations ne sont transmises à personne et sont supprimées lorsque vous désinstallez l'application
+      ou effacez ses données.</p>
+
+    <h3>3. Partage, rappel et contact</h3>
+    <ul>
+      <li><strong>Partage :</strong> quand vous touchez « Partager » ou « Demander à un ami », le jeu prépare un
+        texte ou une image de votre grille et les remet à l'application que <strong>vous</strong> choisissez
+        (messagerie, e-mail…). Rien n'est envoyé sans votre action, et DIASOFT ne reçoit rien.</li>
+      <li><strong>Rappel quotidien :</strong> si vous l'activez, la notification est programmée sur votre
+        téléphone. Aucun serveur n'est utilisé.</li>
+      <li><strong>Contact :</strong> si vous nous écrivez depuis les paramètres, votre application e-mail s'ouvre
+        avec la version du jeu et le modèle du téléphone. Nous ne recevons que ce que vous choisissez d'envoyer,
+        et nous l'utilisons seulement pour vous répondre.</li>
+    </ul>
+
+    <h3>4. Publicité (Google AdMob)</h3>
+    <p>Les jeux affichent des annonces fournies par Google AdMob : des vidéos que vous choisissez de regarder
+      pour gagner des pièces, et des annonces entre certains niveaux. Pour cela, le kit AdMob de Google peut
+      collecter et traiter :</p>
+    <ul>
+      <li>l'<strong>identifiant publicitaire</strong> de votre appareil ;</li>
+      <li>des informations techniques : modèle de l'appareil, version du système, langue, adresse IP et
+        localisation approximative qui en découle ;</li>
+      <li>vos <strong>interactions avec les annonces</strong> (affichages, clics) ;</li>
+      <li>des données de diagnostic (plantages, performances).</li>
+    </ul>
+    <p>Ces données servent à afficher et mesurer les annonces, à limiter leur répétition et à prévenir la fraude.
+      Elles sont traitées par Google selon ses propres règles :
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">comment Google
+      utilise les données des sites et applications partenaires</a>.</p>
+
+    <h3>5. Vos choix</h3>
+    <p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, votre <strong>consentement</strong> est
+      demandé au premier lancement avant toute publicité personnalisée ; vous pouvez le modifier à tout moment
+      dans <em>Paramètres → Confidentialité des publicités</em>. Partout, vous pouvez réinitialiser ou supprimer
+      votre identifiant publicitaire dans les réglages Android (<em>Paramètres → Google → Annonces</em>).</p>
+
+    <h3>6. Enfants</h3>
+    <p><strong>Kalimots et Kalimix</strong> s'adressent à un public de 13 ans et plus. Ils ne sont pas conçus
+      pour les enfants de moins de 13 ans et DIASOFT ne collecte sciemment aucune donnée les concernant.</p>
+    <p><strong>Kaliklik</strong> est conçu pour les enfants de 4 à 10 ans et leurs parents. Les points 3, 4 et 5
+      ne le concernent pas :</p>
+    <ul>
+      <li><strong>aucune publicité</strong>, aucun kit publicitaire ni outil de mesure d'audience ;</li>
+      <li><strong>aucun achat</strong>, aucun compte, aucun partage, aucune notification ;</li>
+      <li>le jeu ne demande <strong>aucune autorisation</strong>, pas même l'accès à Internet : il ne peut rien
+        envoyer ;</li>
+      <li>il enregistre uniquement sur le téléphone la langue, le niveau d'âge choisi, les étoiles et les
+        autocollants gagnés ; les parents peuvent tout effacer depuis l'espace Parents ;</li>
+      <li>les mots sont prononcés par des enregistrements contenus dans le jeu ou par la voix de synthèse
+        installée sur le téléphone ;</li>
+      <li>l'espace de l'enfant ne contient aucun lien vers Internet ; l'adresse de contact est affichée
+        seulement dans l'espace Parents, protégé par une addition.</li>
+    </ul>
+
+    <h3>7. Modifications</h3>
+    <p>Toute évolution qui changerait le traitement des données sera indiquée sur cette page
+      <strong>avant</strong> la publication de la version concernée, et la date ci-dessus sera modifiée.</p>
+
+    <h3>8. Contact</h3>
+    <p class="contact">Pour toute question :
+      <span class="addr">diasoft.apps@gmail.com</span>
+      <button type="button" data-copy="diasoft.apps@gmail.com">Copier</button></p>
+  </section>
+
+  <section id="ar" lang="ar" dir="rtl">
+    <h2>سياسة الخصوصية</h2>
+    <p>تنطبق هذه السياسة على الألعاب التي تنشرها <strong>DIASOFT</strong>:</p>
+    <ul>
+      <li><strong>كلمة</strong>: لعبة كلمات متقاطعة ومسهمة، المعرّف <code dir="ltr">com.diasoft.kalimots</code>؛</li>
+      <li><strong>صيد الكلمات</strong>: لعبة البحث عن الكلمات بالعربية والفرنسية والإنجليزية، المعرّف <code dir="ltr">com.diasoft.kalimix</code>؛</li>
+      <li><strong>كلماتي الأولى</strong>: الكلمات الأولى للأطفال بالعربية والفرنسية والإنجليزية، المعرّف <code dir="ltr">com.diasoft.kaliklik</code>.</li>
+    </ul>
+    <p class="summary"><strong>باختصار:</strong> لا تجمع DIASOFT أي بيانات شخصية ولا تطلب منك أي حساب.
+      الألعاب مجانية بفضل الإعلانات التي تقدمها خدمة <strong>جوجل آدموب</strong>، ولعرض هذه الإعلانات تعالج جوجل
+      بعض البيانات التقنية لجهازك كما هو موضح أدناه.
+      <strong>أما لعبة الأطفال «كلماتي الأولى» فلا تحتوي على أي إعلانات</strong>، كما في النقطة 6.</p>
+
+    <h3>1. البيانات التي تجمعها DIASOFT</h3>
+    <p>لا شيء. لا تطلب الألعاب الاسم ولا البريد الإلكتروني ولا رقم الهاتف، ولا الوصول إلى موقعك أو جهات
+      الاتصال أو الصور أو الميكروفون أو الكاميرا. لا تتلقى DIASOFT أي معلومات عنك.</p>
+
+    <h3>2. البيانات المحفوظة على جهازك</h3>
+    <p>لكي تتمكن من متابعة اللعب، تحفظ كل لعبة <strong>على هاتفك فقط</strong>: اللغة ونمط اللعب المختارين،
+      وإعداداتك مثل المظهر والأصوات والاهتزاز والحركات والتذكير اليومي، والمستويات المنجزة، والشبكات الجارية، وعدد عملاتك،
+      وسلسلة أيامك. لا تُرسل هذه المعلومات إلى أي جهة، وتُحذف عند إلغاء تثبيت التطبيق أو مسح بياناته.</p>
+
+    <h3>3. المشاركة والتذكير والتواصل</h3>
+    <ul>
+      <li><strong>المشاركة:</strong> عند الضغط على «مشاركة» أو «اسأل صديقاً»، تجهّز اللعبة نصاً أو صورة لشبكتك
+        وتسلّمها إلى التطبيق الذي تختاره <strong>أنت</strong>، مثل تطبيق المراسلة أو البريد. لا يُرسل شيء دون
+        فعل منك، ولا تتلقى DIASOFT شيئاً.</li>
+      <li><strong>التذكير اليومي:</strong> إذا فعّلته، يُبرمج الإشعار على هاتفك فقط، دون استعمال أي خادم.</li>
+      <li><strong>التواصل:</strong> إذا راسلتنا من الإعدادات، يُفتح تطبيق البريد لديك مع إصدار اللعبة وطراز
+        الهاتف. لا نتلقى إلا ما تختار إرساله، ونستعمله فقط للرد عليك.</li>
+    </ul>
+
+    <h3>4. الإعلانات عبر جوجل آدموب</h3>
+    <p>تعرض الألعاب إعلانات تقدمها جوجل آدموب: مقاطع فيديو تختار مشاهدتها لربح عملات، وإعلانات بين بعض
+      المستويات. ولهذا الغرض قد تجمع أدوات جوجل وتعالج:</p>
+    <ul>
+      <li><strong>المعرّف الإعلاني</strong> لجهازك؛</li>
+      <li>معلومات تقنية: طراز الجهاز، وإصدار النظام، واللغة، وعنوان الإنترنت والموقع التقريبي المستنتج منه؛</li>
+      <li><strong>تفاعلاتك مع الإعلانات</strong> مثل المشاهدات والنقرات؛</li>
+      <li>بيانات تشخيصية عن الأعطال والأداء.</li>
+    </ul>
+    <p>تُستعمل هذه البيانات لعرض الإعلانات وقياسها، والحد من تكرارها، ومنع الاحتيال، وتعالجها جوجل وفق
+      قواعدها الخاصة المنشورة على موقعها:
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">كيف تستخدم جوجل
+      بيانات المواقع والتطبيقات الشريكة</a>.</p>
+
+    <h3>5. اختياراتك</h3>
+    <p>في المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا، تُطلب <strong>موافقتك</strong> عند أول تشغيل قبل
+      عرض أي إعلانات مخصصة، ويمكنك تعديلها في أي وقت من إعدادات اللعبة، قسم خصوصية الإعلانات. وفي كل مكان
+      يمكنك إعادة تعيين المعرّف الإعلاني أو حذفه من إعدادات أندرويد، في قسم جوجل ثم الإعلانات.</p>
+
+    <h3>6. الأطفال</h3>
+    <p>لعبتا <strong>كلمة</strong> و<strong>صيد الكلمات</strong> موجهتان لمن هم في سن 13 عاماً فما فوق، وليستا
+      مصممتين للأطفال دون هذه السن، ولا تجمع DIASOFT عن قصد أي بيانات تخصهم.</p>
+    <p>لعبة <strong>كلماتي الأولى</strong> مصممة للأطفال من 4 إلى 10 سنوات ولآبائهم. النقاط 3 و4 و5 لا تخصها:</p>
+    <ul>
+      <li><strong>بلا إعلانات</strong>، وبلا أي أدوات إعلانية أو أدوات لقياس الاستعمال؛</li>
+      <li><strong>بلا مشتريات</strong>، وبلا حساب، وبلا مشاركة، وبلا إشعارات؛</li>
+      <li>لا تطلب اللعبة <strong>أي إذن</strong>، ولا حتى الاتصال بالإنترنت، فلا يمكنها إرسال أي شيء؛</li>
+      <li>تحفظ على الهاتف فقط اللغة ومستوى العمر المختار والنجوم والملصقات، ويمكن للآباء مسح كل شيء من فضاء الآباء؛</li>
+      <li>تُنطق الكلمات بتسجيلات موجودة داخل اللعبة أو بالصوت الآلي المثبت في الهاتف؛</li>
+      <li>لا يحتوي فضاء الطفل على أي رابط نحو الإنترنت، وعنوان التواصل يظهر فقط في فضاء الآباء المحمي بعملية جمع.</li>
+    </ul>
+
+    <h3>7. التعديلات</h3>
+    <p>سيتم الإعلان على هذه الصفحة عن أي تغيير في طريقة معالجة البيانات <strong>قبل</strong> نشر الإصدار المعني،
+      وسيتم تغيير التاريخ أعلاه.</p>
+
+    <h3>8. التواصل</h3>
+    <p class="contact">لأي سؤال:
+      <span class="addr" dir="ltr">diasoft.apps@gmail.com</span>
+      <button type="button" data-copy="diasoft.apps@gmail.com">نسخ</button></p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>Privacy policy</h2>
+    <p>This policy applies to the games published by <strong>DIASOFT</strong>:</p>
+    <ul>
+      <li><strong>Kalimots</strong> — crosswords and arrow words, package <code>com.diasoft.kalimots</code>;</li>
+      <li><strong>Kalimix</strong> — word search in English, French and Arabic, package <code>com.diasoft.kalimix</code>;</li>
+      <li><strong>Kaliklik</strong> — first words for children in English, French and Arabic, package <code>com.diasoft.kaliklik</code>.</li>
+    </ul>
+    <p class="summary"><strong>In short:</strong> DIASOFT collects no personal data and asks for no account.
+      The games are free thanks to advertising, provided by <strong>Google AdMob</strong>: to show ads, Google
+      processes some technical data from your device, described below.
+      <strong>Kaliklik, the children's game, is the exception: it contains no advertising</strong> (see point 6).</p>
+
+    <h3>1. Data collected by DIASOFT</h3>
+    <p>None. The games do not ask for your name, e-mail address or phone number, and do not access your
+      location, contacts, photos, microphone or camera. DIASOFT receives no information about you.</p>
+
+    <h3>2. Data stored on your device</h3>
+    <p>So that you can resume your game, each game stores <strong>on your phone only</strong>: the language and
+      game mode you chose, your settings (theme, sounds, vibration, animations, daily reminder), completed
+      levels, puzzles in progress, your coins and your daily streak. This information is sent to no one and is
+      deleted when you uninstall the game or clear its data.</p>
+
+    <h3>3. Sharing, reminder and contact</h3>
+    <ul>
+      <li><strong>Sharing:</strong> when you tap "Share" or "Ask a friend", the game prepares a text or a
+        picture of your puzzle and hands it to the app <strong>you</strong> choose (messaging, e-mail…).
+        Nothing is sent without your action, and DIASOFT receives nothing.</li>
+      <li><strong>Daily reminder:</strong> if you turn it on, the notification is scheduled on your phone.
+        No server is involved.</li>
+      <li><strong>Contact:</strong> if you write to us from the settings, your e-mail app opens with the game
+        version and phone model. We only receive what you choose to send, and we use it only to reply to you.</li>
+    </ul>
+
+    <h3>4. Advertising (Google AdMob)</h3>
+    <p>The games show ads provided by Google AdMob: videos you choose to watch to earn coins, and ads between
+      some levels. For this purpose, Google's AdMob SDK may collect and process:</p>
+    <ul>
+      <li>your device's <strong>advertising ID</strong>;</li>
+      <li>technical information: device model, system version, language, IP address and the approximate
+        location derived from it;</li>
+      <li>your <strong>interactions with ads</strong> (views, clicks);</li>
+      <li>diagnostic data (crashes, performance).</li>
+    </ul>
+    <p>This data is used to show and measure ads, limit their repetition and prevent fraud. It is processed by
+      Google under its own rules:
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google
+      uses data from partner sites and apps</a>.</p>
+
+    <h3>5. Your choices</h3>
+    <p>In the European Economic Area, the United Kingdom and Switzerland, your <strong>consent</strong> is
+      requested on first launch before any personalised advertising; you can change it at any time in
+      <em>Settings → Ad privacy</em>. Everywhere, you can reset or delete your advertising ID in the Android
+      settings (<em>Settings → Google → Ads</em>).</p>
+
+    <h3>6. Children</h3>
+    <p><strong>Kalimots and Kalimix</strong> are intended for people aged 13 and over. They are not designed
+      for children under 13 and DIASOFT does not knowingly collect any data about them.</p>
+    <p><strong>Kaliklik</strong> is designed for children aged 4 to 10 and their parents. Points 3, 4 and 5 do
+      not apply to it:</p>
+    <ul>
+      <li><strong>no advertising</strong>, no advertising SDK and no analytics;</li>
+      <li><strong>no purchases</strong>, no account, no sharing, no notifications;</li>
+      <li>the game requests <strong>no permission</strong>, not even Internet access: it cannot send anything;</li>
+      <li>it stores on the phone only the language, the chosen age level, and the stars and stickers earned;
+        parents can erase everything from the Parents area;</li>
+      <li>words are spoken by recordings included in the game or by the text-to-speech voice installed on
+        the phone;</li>
+      <li>the child's area contains no Internet links; the contact address is shown only in the Parents
+        area, protected by a small sum.</li>
+    </ul>
+
+    <h3>7. Changes</h3>
+    <p>Any change in the way data is handled will be announced on this page <strong>before</strong> the
+      corresponding version is published, and the date above will be updated.</p>
+
+    <h3>8. Contact</h3>
+    <p class="contact">For any question:
+      <span class="addr">diasoft.apps@gmail.com</span>
+      <button type="button" data-copy="diasoft.apps@gmail.com">Copy</button></p>
+  </section>
+</main>
+
+<script>
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var label = btn.textContent;
+      var done = function () { btn.textContent = btn.closest('[dir="rtl"]') ? 'تم النسخ' : btn.closest('[lang="en"]') ? 'Copied' : 'Copié'; setTimeout(function () { btn.textContent = label; }, 1500); };
+      var fallback = function () {
+        var r = document.createRange(); r.selectNodeContents(btn.previousElementSibling);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      };
+      try {
+        navigator.clipboard.writeText(btn.dataset.copy).then(done, fallback);
+      } catch (e) { fallback(); }
+    });
+  });
+</script>
+
+</body>
+</html>

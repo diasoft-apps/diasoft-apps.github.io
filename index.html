@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DIASOFT</title>
+<meta name="description" content="DIASOFT, studio de jeux mobiles à Nador (Maroc) : Kalimots, mots croisés et mots fléchés en français et en arabe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap">
+<style>
+  :root {
+    --ground: #FBF6EA; --panel: #FFFFFF; --ink: #1A2333; --muted: #5B6472;
+    --night: #0F2742; --gold: #A8841A; --line: #E6DCC3; --tint: #F3EBD4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #081627; --panel: #10233B; --ink: #F0E9D6; --muted: #A9B3C1;
+      --night: #E3C565; --gold: #E3C565; --line: #22405F; --tint: #16304D;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #081627; --panel: #10233B; --ink: #F0E9D6; --muted: #A9B3C1;
+    --night: #E3C565; --gold: #E3C565; --line: #22405F; --tint: #16304D;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font: 16px/1.65 "El Messiri", "Segoe UI", "Noto Sans Arabic", Tahoma, sans-serif;
+    padding: 40px 16px 64px;
+  }
+  main { max-width: 720px; margin: 0 auto; display: grid; gap: 28px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand p { margin: 0; letter-spacing: .3em; font-weight: 700; color: var(--gold); }
+  h1 { margin: 0; font-size: clamp(1.7rem, 5vw, 2.4rem); line-height: 1.15; text-wrap: balance; }
+  .lead { margin: 6px 0 0; color: var(--muted); max-width: 60ch; }
+  section { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 20px 24px; }
+  h2 { margin: 0 0 4px; font-size: 1.35rem; color: var(--night); }
+  .ar { font-size: 1.1rem; }
+  p { margin: 6px 0; max-width: 65ch; }
+  .btn {
+    display: inline-block; margin-top: 10px; padding: 8px 18px; border-radius: 999px;
+    background: var(--night); color: var(--ground); text-decoration: none; font-weight: 700;
+  }
+  .btn:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: .92rem; display: grid; gap: 4px; }
+  footer a { color: var(--night); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">
+      <svg width="48" height="48" viewBox="0 0 44 44" aria-hidden="true">
+        <polygon fill="#C9A227" points="22,0 26.2,11.9 37.6,6.4 32.1,17.8 44,22 32.1,26.2 37.6,37.6 26.2,32.1 22,44 17.8,32.1 6.4,37.6 11.9,26.2 0,22 11.9,17.8 6.4,6.4 17.8,11.9"/>
+        <circle cx="22" cy="22" r="13" fill="#0F2742"/>
+        <g fill="#FFFFFF">
+          <rect x="14.5" y="14.5" width="4" height="4" rx="1"/><rect x="20" y="14.5" width="4" height="4" rx="1"/><rect x="25.5" y="14.5" width="4" height="4" rx="1"/>
+          <rect x="20" y="20" width="4" height="4" rx="1"/>
+          <rect x="14.5" y="25.5" width="4" height="4" rx="1"/><rect x="20" y="25.5" width="4" height="4" rx="1"/>
+        </g>
+        <g fill="#FFFFFF" opacity=".3"><rect x="14.5" y="20" width="4" height="4" rx="1"/><rect x="25.5" y="20" width="4" height="4" rx="1"/><rect x="25.5" y="25.5" width="4" height="4" rx="1"/></g>
+      </svg>
+      <p>DIASOFT</p>
+    </div>
+    <h1>Des jeux de lettres, en français et en arabe</h1>
+    <p class="lead">DIASOFT est un petit studio de jeux mobiles installé à Nador, au Maroc.
+      Nos jeux sont gratuits, sans compte, et respectent votre vie privée.</p>
+  </header>
+
+  <section>
+    <h2>Kalimots</h2>
+    <p class="ar" lang="ar" dir="rtl">كلمة: كلمات متقاطعة ومسهمة</p>
+    <p>Mots croisés et mots fléchés en français et en arabe : 600 niveaux, une grille du jour,
+      jouable sans connexion.</p>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.diasoft.kalimots">Disponible sur Google Play</a>
+  </section>
+
+  <footer>
+    <p><a href="confidentialite.html">Politique de confidentialité · سياسة الخصوصية · Privacy policy</a></p>
+    <p>Contact : diasoft.apps@gmail.com</p>
+    <p>© 2026 DIASOFT</p>
+  </footer>
+</main>
+</body>
+</html>
